@@ -3,7 +3,7 @@ let state;
 
 // only our initial state set in the reducer
 // setting our initial state as a default argument to our reducer
-function reducer(state = { count: 0 }, action) {
+function reducer(action, state = { count: 0 }) {
   switch (action.type) {
     case 'INCREASE_COUNT':
       return { count: state.count + 1 };
